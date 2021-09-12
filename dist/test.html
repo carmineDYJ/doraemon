@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <style id="demo"></style>
+    <div id="demo2"></div>
+    <div id="buttons">
+        <button id="btnPause">Pause</button>
+        <button id="btnPlay">Play</button>
+        <button id="btnSlow">Slow</button>
+        <button id="btnNormal">Normal</button>
+        <button id="btnFast">Fast</button>
+    </div>
+    <style>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        *::before, *::after {
+            box-sizing: border-box;
+        }
+        #demo {
+            display: none;
+        }
+        #demo2 {
+            background: #eee;
+            position: fixed;
+            height: 40vh;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow-y: auto;
+        }
+        #demo2::-webkit-scrollbar {
+            display: none;
+        }
+        #output {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10vh;
+            height: 50vh;
+        }
+        #buttons {
+            position: fixed;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            right: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        #buttons>button {
+            margin-bottom: 10px;
+            padding: 4px 8px;
+        }</style>
+    <div id="output">
+        <div class="head">
+            <div class="eye left">
+                <div class="eyeball left"></div>
+            </div>
+            <div class="eye right">
+                <div class="eyeball right"></div>
+            </div>
+            <div class="face"></div>
+            <div class="nose">
+                <div class="philtrum">
+                    <div class="beard1 left"></div>
+                    <div class="beard2 left"></div>
+                    <div class="beard3 left"></div>
+                    <div class="beard1 right"></div>
+                    <div class="beard2 right"></div>
+                    <div class="beard3 right"></div>
+                </div>
+            </div>
+            <!-- 人中 -->
+            <div class="mouth">
+                <div class="up"></div>
+                <div class="open">
+                    <div class="tongue">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="necklace">
+                <div class="bell">
+                    <div class="up">
+                        <div class="mid">
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/test.e98b79dd.js" async="" defer=""></script>
+</body>
+
+</html>

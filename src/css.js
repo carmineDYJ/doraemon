@@ -1,8 +1,8 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
-*::before, *::after{box-sizing: border-box;}
+const string = `
+.head *{margin: 0;padding: 0;box-sizing: border-box;}
+.head *::before, .head *::after{box-sizing: border-box;}
 .head{
-    max-height: 100%;
-    min-width: 100%;
+    transform: scale(0.5);
     background: #469ef8;
     border: 8px solid black;
     height: 700px;
@@ -12,7 +12,6 @@
     margin-top: 10px;
     border-radius: 50%;
     position: relative;
-    /* transform: scale(0.8); */
 }
 .head .face{
     border: 5px solid black;
@@ -266,3 +265,6 @@
     bottom: -26px;
     background: black;
 }
+`;
+
+export default string;
